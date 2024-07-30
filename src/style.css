@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+.nav > img {
+  height: 60px;
+  width: 60px;
+}
+.nav-list > li {
+  padding: 10px;
+}
+.demo-form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.tenziesRoot {
+  background-color: black;
+  padding: 40px;
+}
+.tenziesContainer {
+  border-radius: 5px;
+  background-color: white;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.dieContainer {
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 20px;
+}
+.die-face {
+  height: 50px;
+  width: 50px;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #afa6a6;
+}
+.roll-button {
+  color: white;
+  background-color: rgb(76, 76, 228);
+}
+.roll-button:hover {
+  cursor: pointer;
+  background-color: rgb(10, 10, 163);
+}
